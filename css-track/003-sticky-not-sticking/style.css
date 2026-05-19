@@ -1,0 +1,17 @@
+body {
+    margin: 0;
+    font-family: sans-serif;
+}
+
+.navbar {
+    background: #333;
+    color: white;
+    padding: 1rem;
+    /* BUG: Sticky position needs a placement value (top, bottom, etc) */
+    position: sticky;
+}
+
+.spacer {
+    height: 1000px;
+    background: linear-gradient(to bottom, #eee, #ccc);
+}

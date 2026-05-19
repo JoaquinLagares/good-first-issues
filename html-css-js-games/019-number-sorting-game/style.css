@@ -1,0 +1,91 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    background: white;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    max-width: 500px;
+}
+
+h1 {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.numbers {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 30px 0;
+    min-height: 100px;
+}
+
+.number {
+    width: 80px;
+    height: 80px;
+    background: #667eea;
+    color: white;
+    border: 2px solid #764ba2;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    cursor: grab;
+    user-select: none;
+    transition: all 0.3s;
+}
+
+.number:active {
+    cursor: grabbing;
+    opacity: 0.8;
+}
+
+.number.dragging {
+    opacity: 0.5;
+    transform: scale(1.05);
+}
+
+button {
+    background: #667eea;
+    color: white;
+    padding: 12px 30px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background 0.3s;
+    margin: 10px 5px;
+}
+
+button:hover {
+    background: #764ba2;
+}
+
+#message {
+    font-weight: bold;
+    color: #667eea;
+    min-height: 30px;
+    margin: 20px 0;
+}
+
+#score {
+    color: #667eea;
+    font-weight: bold;
+}

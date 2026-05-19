@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HTML Bug #003: Floating Footer</title>
+    <style>
+        .container { border: 2px solid blue; padding: 20px; }
+        footer { background: #eee; padding: 10px; margin-top: 20px; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Main Content</h1>
+        <p>This paragraph is inside the container.</p>
+        <!-- BUG: This div is never closed -->
+        <div>
+            <p>I am a sub-section.</p>
+        
+    </div>
+
+    <footer>
+        &copy; 2024 Broken Layout Inc.
+    </footer>
+</body>
+</html>

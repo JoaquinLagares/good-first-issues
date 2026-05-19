@@ -1,0 +1,8 @@
+body {
+    background-color: lightblue;
+}
+
+.fancy-title {
+    color: darkblue;
+    text-transform: uppercase;
+}

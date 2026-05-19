@@ -1,0 +1,8 @@
+.card {
+    background: #f9f9f9;
+    border: 1px solid #ddd;
+    padding: 20px;
+    /* BUG: Centering with margin auto doesn't work on <span> or if width is 100% */
+    margin: 0 auto;
+    text-align: center;
+}

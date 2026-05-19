@@ -1,0 +1,15 @@
+.box-1 {
+    width: 200px;
+    height: 200px;
+    background: red;
+    /* BUG: z-index won't work because position is 'static' by default */
+    z-index: 10;
+}
+
+.box-2 {
+    width: 200px;
+    height: 200px;
+    background: blue;
+    margin-top: -100px;
+    margin-left: 50px;
+}

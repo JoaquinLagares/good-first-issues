@@ -1,0 +1,14 @@
+.container {
+    width: 100%;
+    display: flex;
+}
+
+.half {
+    width: 50%;
+    padding: 20px;
+    border: 5px solid black;
+    /* BUG: The padding and border are making the boxes wider than 50% */
+}
+
+.left { background: lightblue; }
+.right { background: lightgreen; }

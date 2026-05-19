@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HTML Bug #010: Link Security</title>
+</head>
+<body>
+    <h1>External Resources</h1>
+    <!-- BUG: target="_blank" without rel="noopener" is a security risk -->
+    <a href="https://example.com" target="_blank">Open External Site</a>
+    <p>Clicking this should be safe and open in a new tab.</p>
+</body>
+</html>

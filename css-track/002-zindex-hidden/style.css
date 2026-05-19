@@ -1,0 +1,18 @@
+.background-content {
+    position: relative;
+    z-index: 10;
+    background: #ccc;
+    height: 100vh;
+}
+
+.modal {
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    width: 300px;
+    height: 200px;
+    background: gold;
+    border: 2px solid black;
+    /* BUG: Modal is hidden behind background-content because of z-index */
+    z-index: 1;
+}

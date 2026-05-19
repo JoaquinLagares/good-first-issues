@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS Bug #002: Hidden Modal</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="background-content">
+        <h1>Welcome to the Page</h1>
+        <p>This is some content that stays in the back.</p>
+    </div>
+
+    <!-- BUG: The modal is behind the background content -->
+    <div class="modal">
+        <h2>URGENT MESSAGE</h2>
+        <p>You need to see this!</p>
+    </div>
+</body>
+</html>

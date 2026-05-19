@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HTML Bug #004: Label Mismatch</title>
+</head>
+<body>
+    <h1>Newsletter Sign-up</h1>
+    <form>
+        <!-- BUG: Clicking the label doesn't focus the input -->
+        <label for="email-field">Email address:</label>
+        <input type="email" id="user-email" name="email">
+        <button type="submit">Subscribe</button>
+    </form>
+</body>
+</html>

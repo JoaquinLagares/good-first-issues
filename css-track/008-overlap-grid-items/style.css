@@ -1,0 +1,19 @@
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}
+
+.item-a {
+    grid-column: 1 / 3;
+    background: lightblue;
+    padding: 20px;
+}
+
+.item-b {
+    /* BUG: This item is forced into the same column as A, causing overlap or layout issues */
+    grid-column: 1 / 2;
+    background: pink;
+    padding: 20px;
+    opacity: 0.8;
+}

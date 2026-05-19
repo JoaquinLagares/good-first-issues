@@ -1,0 +1,4 @@
+.target {
+    /* BUG: Multi-word font names need quotes */
+    font-family: Times New Roman, serif;
+}

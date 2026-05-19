@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HTML Bug #008: ID Conflict</title>
+</head>
+<body>
+    <h1 id="main-title">Page One</h1>
+    
+    <!-- BUG: This element also has the same ID -->
+    <h2 id="main-title">Section Two</h2>
+
+    <p>A script is supposed to turn the title red, but something is wrong.</p>
+
+    <script>
+        // document.getElementById always returns the FIRST match
+        const title = document.getElementById("main-title");
+        title.style.color = "red";
+    </script>
+</body>
+</html>

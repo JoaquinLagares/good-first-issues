@@ -1,0 +1,9 @@
+.card {
+    width: 200px;
+    height: 100px;
+    background: #f0f0f0;
+    border: 1px solid #ccc;
+    padding: 10px;
+    /* BUG: Overflow hidden is hiding the text because height is too small */
+    overflow: hidden;
+}
