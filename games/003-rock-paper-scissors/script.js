@@ -30,22 +30,17 @@ function determineWinner(player, computer) {
         return "It's a Draw!";
     }
     
-    // BUG: Win conditions are wrong!
-    if (player === 'rock' && computer === 'scissors') {
-        computerScore++;
-        return 'You Lose!';
-    }
-    if (player === 'paper' && computer === 'rock') {
-        computerScore++;
-        return 'You Lose!';
-    }
-    if (player === 'scissors' && computer === 'paper') {
-        computerScore++;
-        return 'You Lose!';
+    if (
+        (player === 'rock' && computer === 'scissors') ||
+        (player === 'paper' && computer === 'rock') ||
+        (player === 'scissors' && computer === 'paper')
+    ) {
+        playerScore++;
+        return 'You Win!';
     }
     
-    playerScore++;
-    return 'You Win!';
+    computerScore++;
+    return 'You Lose!';
 }
 
 resetBtn.addEventListener('click', function() {

@@ -11,7 +11,7 @@ cards.forEach(card => {
 function handleCardClick(e) {
     const card = e.target;
     
-    if (flipped.length > 2) return;
+    if (flipped.length >= 2) return;
     if (card.classList.contains('flipped')) return;
     
     card.classList.add('flipped');
@@ -36,11 +36,10 @@ function checkMatch() {
             setTimeout(() => alert('You won!'), 300);
         }
     } else {
-        // BUG: Cards are not flipping back!
-        // card1.classList.remove('flipped');
-        // card2.classList.remove('flipped');
-        // card1.textContent = '';
-        // card2.textContent = '';
+        card1.classList.remove('flipped');
+        card2.classList.remove('flipped');
+        card1.textContent = '';
+        card2.textContent = '';
     }
     
     flipped = [];

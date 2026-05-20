@@ -28,8 +28,7 @@ function handleCellClick(e) {
     e.target.textContent = currentPlayer;
     
     if (checkWin()) {
-        // BUG: Wrong player is announced as winner
-        statusDisplay.textContent = `Player ${currentPlayer === 'X' ? 'O' : 'X'} Wins!`;
+        statusDisplay.textContent = `Player ${currentPlayer} Wins!`;
         cells.forEach(cell => cell.style.pointerEvents = 'none');
         return;
     }
