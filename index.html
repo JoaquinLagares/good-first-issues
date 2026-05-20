@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Good First Issues - Learning Hub</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Lato', sans-serif;
+            line-height: 1.6;
+            color: #2d3748;
+            background: #f7fafc;
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        header {
+            text-align: center;
+            color: #2d3748;
+            margin-bottom: 50px;
+        }
+
+        header h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            font-size: 1.1em;
+            opacity: 0.9;
+        }
+
+        .section-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-bottom: 40px;
+        }
+
+        .card {
+            background: white;
+            border-radius: 8px;
+            padding: 30px;
+            box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+        }
+
+        .card h2 {
+            color: #7a8cec;
+            margin-bottom: 15px;
+            font-size: 1.5em;
+            font-weight: 700;
+        }
+
+        .card p {
+            color: #718096;
+            margin-bottom: 20px;
+            font-size: 0.95em;
+        }
+
+        .card-links {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .button-39 {
+            background-color: #FFFFFF;
+            border: 1px solid rgb(209, 213, 219);
+            border-radius: .5rem;
+            box-sizing: border-box;
+            color: #111827;
+            font-family: 'Lato', sans-serif;
+            font-size: .875rem;
+            font-weight: 600;
+            line-height: 1.25rem;
+            padding: .75rem 1rem;
+            text-align: center;
+            text-decoration: none;
+            box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+            cursor: pointer;
+            user-select: none;
+            -webkit-user-select: none;
+            touch-action: manipulation;
+            display: inline-block;
+            transition: background-color 0.2s ease;
+        }
+
+        .button-39:hover {
+            background-color: rgb(249, 250, 251);
+        }
+
+        .button-39:focus {
+            outline: 2px solid transparent;
+            outline-offset: 2px;
+        }
+
+        .button-39:focus-visible {
+            box-shadow: none;
+        }
+
+        .resources {
+            background: white;
+            border-radius: 8px;
+            padding: 30px;
+            margin-top: 30px;
+            box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+        }
+
+        .resources h2 {
+            color: #5a67d8;
+            margin-bottom: 20px;
+            font-weight: 700;
+        }
+
+        .resources ul {
+            list-style: none;
+        }
+
+        .resources li {
+            padding: 10px 0;
+            border-bottom: 1px solid #f7fafc;
+        }
+
+        .resources li:last-child {
+            border-bottom: none;
+        }
+
+        .resources a {
+            color: #111827;
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        .resources a:hover {
+            text-decoration: underline;
+        }
+
+        footer {
+            text-align: center;
+            color: #718096;
+            margin-top: 50px;
+            padding-top: 20px;
+            border-top: 1px solid #e2e8f0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1><i class="fas fa-bullseye"></i> Good First Issues</h1>
+            <p>A collection of beginner-friendly coding exercises and challenges</p>
+        </header>
+
+        <div class="section-grid">
+            <div class="card">
+                <h2><i class="fas fa-gamepad"></i> Games</h2>
+                <p>Fun interactive games to practice JavaScript and game development concepts.</p>
+                <div class="card-links">
+                    <a href="./games/001-number-guessing-game/" class="button-39">Number Guessing</a>
+                    <a href="./games/002-tic-tac-toe/" class="button-39">Tic Tac Toe</a>
+                    <a href="./games/003-rock-paper-scissors/" class="button-39">Rock Paper Scissors</a>
+                    <a href="./games/004-memory-card-game/" class="button-39">Memory Card Game</a>
+                    <a href="./games/" class="button-39">View All Games →</a>
+                </div>
+            </div>
+
+            <div class="card">
+                <h2><i class="fas fa-palette"></i> CSS Track</h2>
+                <p>Fix CSS layout and styling issues. Perfect for learning CSS fundamentals.</p>
+                <div class="card-links">
+                    <a href="./css-track/001-flex-no-wrap/" class="button-39">Flex No Wrap</a>
+                    <a href="./css-track/002-zindex-hidden/" class="button-39">Z-Index Hidden</a>
+                    <a href="./css-track/005-box-sizing-broken/" class="button-39">Box Sizing</a>
+                    <a href="./css-track/" class="button-39">View All CSS Issues →</a>
+                </div>
+            </div>
+
+            <div class="card">
+                <h2><i class="fas fa-file-code"></i> HTML Track</h2>
+                <p>Repair broken HTML markup and learn semantic HTML best practices.</p>
+                <div class="card-links">
+                    <a href="./html-track/001-broken-image-path/" class="button-39">Broken Image Path</a>
+                    <a href="./html-track/002-unclosed-div/" class="button-39">Unclosed Div</a>
+                    <a href="./html-track/003-label-mismatch/" class="button-39">Label Mismatch</a>
+                    <a href="./html-track/" class="button-39">View All HTML Issues →</a>
+                </div>
+            </div>
+
+            <div class="card">
+                <h2><i class="fas fa-cogs"></i> JavaScript DOM</h2>
+                <p>Master DOM manipulation and JavaScript element interactions.</p>
+                <div class="card-links">
+                    <a href="./js-dom-element/" class="button-39">Browse DOM Exercises</a>
+                </div>
+            </div>
+
+            <div class="card">
+                <h2><i class="fas fa-wrench"></i> JavaScript Track</h2>
+                <p>Core JavaScript exercises and programming fundamentals.</p>
+                <div class="card-links">
+                    <a href="./js-track/" class="button-39">Browse JavaScript Exercises</a>
+                </div>
+            </div>
+
+            <div class="card">
+                <h2><i class="fas fa-book"></i> Documentation</h2>
+                <p>Learn about common programming errors and how to fix them.</p>
+                <div class="card-links">
+                    <a href="./docs/001-off-by-one-error.md" class="button-39">Off-by-One Errors</a>
+                    <a href="./docs/006-memory-leak.md" class="button-39">Memory Leaks</a>
+                    <a href="./docs/007-infinite-loop.md" class="button-39">Infinite Loops</a>
+                    <a href="./docs/" class="button-39">View All Docs →</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="resources">
+            <h2><i class="fas fa-book-open"></i> Resources</h2>
+            <ul>
+                <li><a href="./README.md">Project README</a> - Overview and getting started</li>
+                <li><a href="./CONTRIBUTING.md">Contributing Guide</a> - How to contribute</li>
+                <li><a href="./issues.csv">Issues CSV</a> - Complete issues database</li>
+            </ul>
+        </div>
+
+        <footer>
+            <p>&copy; 2024 Good First Issues. A learning resource for beginners.</p>
+        </footer>
+    </div>
+</body>
+</html>
