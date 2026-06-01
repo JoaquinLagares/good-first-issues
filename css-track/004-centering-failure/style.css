@@ -5,4 +5,5 @@
     /* BUG: Centering with margin auto doesn't work on <span> or if width is 100% */
     margin: 0 auto;
     text-align: center;
+    width: 300px;
 }
