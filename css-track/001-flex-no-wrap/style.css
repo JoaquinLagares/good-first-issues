@@ -1,5 +1,6 @@
 .gallery {
     display: flex;
+    flex-wrap: wrap;
     width: 400px;
     border: 5px solid black;
     /* BUG: Items should wrap to next line instead of overflowing */
