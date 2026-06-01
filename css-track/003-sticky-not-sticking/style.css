@@ -9,6 +9,7 @@ body {
     padding: 1rem;
     /* BUG: Sticky position needs a placement value (top, bottom, etc) */
     position: sticky;
+    top: 0;
 }
 
 .spacer {
